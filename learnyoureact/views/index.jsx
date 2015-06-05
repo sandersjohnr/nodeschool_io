@@ -15,7 +15,7 @@ var TodoBox = React.createClass({
 var TodoList = React.createClass({
   render: function() {
     var todo = this.props.data.map(function(obj){ 
-      return <Todo title={obj.title} key={obj.title} >{obj.detail}</Todo>
+      return <Todo title={obj.title} key={obj.title}>{obj.detail}</Todo>
     });
     return (
       <div className="todoList">
@@ -44,6 +44,7 @@ var Todo = React.createClass({
     this.setState({ checked: e.target.checked });
   },
   render: function() {
+    console.log(this.props.children);
     return (
       <tr>
         <td style={ style.tableContent }>
