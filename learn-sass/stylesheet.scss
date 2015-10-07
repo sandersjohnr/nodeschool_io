@@ -1,0 +1,95 @@
+// $color: #000;
+// body {
+//   color: $color;
+// }
+
+// [2]
+// aside {
+//   ul {
+//     margin: 0;
+//   }
+//   a {
+//     color: red;
+//   }
+// }
+
+// [3]
+// @import 'partialEx3';
+//
+// body {
+//   color: $color;
+// }
+
+// [4]
+// @mixin border($thickness) {
+//   border-width: $thickness;
+// }
+//
+// img {
+//   @include border(10px);
+// }
+
+// [5]
+// .push-button {
+//   background-color: blue;
+// }
+//
+// .main-button {
+//   @extend .push-button;
+//   font-weight: bold;
+// }
+
+// [6]
+// $page-width: 1400px;
+// $padding: 20px;
+// .container {
+//   padding: $padding;
+//   width: 0.8 * $page-width - 2 * $padding;
+// }
+
+// [7]
+// .sassy {
+//   border: {
+//     width: 10px;
+//     color: red;
+//     radius: 5px;
+//   }
+// }
+
+// [8]
+// button {
+//   color: black;
+//   &:focus {
+//     color: red;
+//   }
+// }
+
+// [9]
+// $selector: article;
+//
+// #{$selector} {
+//   color: #f00;
+// }
+
+// [10]
+// @each $big-cat in cheetah, puma, jaguar, panther, tiger, leopard {
+//   .#{$big-cat}-picture {
+//     padding: 3em;
+//   }
+// }
+
+// [11]
+// @for $i from 1 through 6 {
+//   h#{$i} {
+//     font-size: 24px - 3px * $i;
+//   }
+// }
+
+// [12]
+// $i: 1;
+// @while $i <= 6 {
+//   h#{$i} {
+//     font-size: 24px - 3px * $i;
+//   }
+//   $i: $i + 1;
+// }
